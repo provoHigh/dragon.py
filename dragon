@@ -1,0 +1,89 @@
+import turtle
+t=turtle.Turtle()
+s= turtle.Screen()
+
+#this is the body
+t.color("black","gray")
+t.begin_fill()
+t.forward(150)
+t.right(90)
+t.forward(50)
+t.right(90)
+t.forward(150)
+t.right(90)
+t.forward(50)
+
+#this is the tail
+t.left(90)
+t.forward(300)
+t.left(90)
+t.forward(30)
+t.left(90)
+t.forward(300)
+t.left(90)
+t.forward(30)
+t.right(90)
+t.forward(150)
+t.right(90)
+t.forward(25)
+
+#this is the neck
+t.left(90)
+t.forward(200)
+t.left(90)
+t.forward(25)
+t.left(90)
+t.forward(200)
+t.left(90)
+t.forward(25)
+t.left(90)
+t.forward(200)
+t.left(90)
+
+#this is the head
+t.forward(50)
+t.right(90)
+t.forward(50)
+t.right(90)
+t.forward(50)
+t.right(90)
+t.forward(50)
+t.left(90)
+t.forward(20)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(20)
+t.left(90)
+t.forward(100)
+t.right(90)
+t.forward(25) 
+t.left(90)
+t.forward(10)
+t.end_fill()
+
+#this is the spikes on the back
+def new_func(t):
+    t.color("pink","purple")
+y = float("17")
+x = 0
+    
+
+t.begin_fill()
+while x <= 17:
+  new_func(t)
+  x += 1
+  
+  t.right(90)
+  t.forward(5)
+  t.left(90)
+  t.forward(10)
+  t.left(90)
+  t.forward(5)
+  t.right(90)
+  t.forward(10)
+  t.forward(15)
+t.left(180)
+t.forward(640)
+t.end_fill()
+s.exitonclick()
